@@ -15,13 +15,22 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Look",
-                    "type": "Value",
-                    "id": "2259b002-e024-4ccf-aed5-17a441703cf3",
-                    "expectedControlType": "Vector2",
+                    "name": "Dash",
+                    "type": "Button",
+                    "id": "31f3dba7-3bd6-4bcc-8590-330138891fcc",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "0c34bfb2-ec44-46d4-8f91-db02f65a3dc7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=0.2)",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -93,23 +102,45 @@
                 },
                 {
                     "name": "",
-                    "id": "569b19ef-afb7-4de9-a99c-762dc1e8f649",
-                    "path": "<Gamepad>/rightStick",
+                    "id": "f4af84b0-d8e4-408a-8123-15c290b57d46",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
-                    "processors": "NormalizeVector2",
-                    "groups": "Gamepad",
-                    "action": "Look",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "9a672ed2-05c1-4208-a7cd-97bfa93d6a97",
-                    "path": "<Mouse>/position",
+                    "id": "0c78d5c2-c6e2-415b-af4c-3b400ec2f8f4",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d89d3c1-a347-4bcd-9665-84c7a1e834de",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Look",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c10f6f29-f42a-4423-9faf-db3f49bc49b6",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
